@@ -1,0 +1,170 @@
+/* Reset de estilos por defecto */
+body, h1, h2, table, th, td, button, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos globales */
+body {
+    background-image: url(/IMG/container_bg.png);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon{
+    display: block;
+    margin: auto;
+    width: 15%;
+    align-items: center;
+}
+
+/* Estilos para la tabla de alumnos */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #0074e4;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para los botones de editar y eliminar */
+button.editar-button {
+    background-color: #0074e4;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.eliminar-button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilos para el botón de agregar alumno */
+.button-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+button.button {
+    background-color: #0074e4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilos para los modales */
+
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close {
+    color: #888;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Estilos para el formulario de edición y agregación */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para los botones de guardar cambios y agregar alumno en los formularios */
+button.button {
+    width: 100%;
+    background-color: #0074e4;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilos para el buscador */
+#buscador {
+    float: right;
+    margin-top: -40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

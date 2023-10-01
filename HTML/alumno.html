@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/loader.css">
+    <link rel="stylesheet" href="/CSS/alumn.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="loading-wrapp" id="loading">
+        <div class="inner">
+          <div class="fill"></div>
+        </div>
+      </div>
+      <section>
+        <div class="bannerVideo" id="slideShow">
+          <video
+            src="/IMG/La serie Horizontes Pokémon 🌅 _ Tráiler oficial (1080p).mp4"
+            autoplay
+            muted
+            loop class="active"
+            
+          ></video>
+          <video src="/IMG/Campeonato Mundial Pokémon 2023 _ Tráiler oficial (1080p).mp4" autoplay muted loop ></video>
+          <video src="/IMG/La serie Horizontes Pokémon 🌅 _ Tráiler oficial (1080p).mp4" autoplay muted loop></video>
+        </div>
+        <div class="container">
+          <header id="navbar">
+            <a href="#" class="logo">Pokeschool</a>
+            <ul>
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="/HTML/pokedex.html">Pokedex</a></li>
+              <li><a href="#">Tarea</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+            <span class="menuIcon" onclick="toggleMenu()"></span>
+          </header>
+          <div class="content">
+            <div class="bannerText" id="slideShowText">
+              <div class="active">
+                <h2>La serie Horizontes</h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+                  doloribus recusandae aliquam eaque rerum? Iste, veniam earum
+                  odit maxime consectetur odio vero aperiam rem quod? Perferendis
+                  nesciunt fuga veniam ipsam.
+                </p>
+              </div>
+              <div>
+                <h2>Campeonato Mundial</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  qui, ab alias porro architecto ut tempora eos pariatur at ad
+                  voluptatem dolores soluta eaque consectetur nulla? Ullam officia
+                  sunt repudiandae.
+                </p>
+              </div>
+              <div>
+                <h2>La serie Horizontes</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  qui, ab alias porro architecto ut tempora eos pariatur at ad
+                  voluptatem dolores soluta eaque consectetur nulla? Ullam officia
+                  sunt repudiandae.
+                </p>
+              </div>
+            </div>
+          </div>
+          <ul class="controls">
+            <li onclick="prevSlide();prevSlideText();"><img src="/IMG/left.png" /></li>
+            <li onclick="nextSlide();nextSlideText();"><img src="/IMG/right.png" /></li>
+          </ul>
+        </div>
+      </section>
+      <script src="/JS/alumno.js"></script>
+    <script src="../JS/loader.js"></script>
+</body>
+</html>

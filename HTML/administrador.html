@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/loader.css">
+    <title>Gestión de Alumnos - Escuela</title>
+</head>
+<body>
+
+    <div class="loading-wrapp" id="loading">
+        <div class="inner">
+          <div class="fill"></div>
+        </div>
+      </div>
+
+
+    <header>
+        <img src="/IMG/612ce4761b9679000402af1c.png" alt="" class="pokemon">
+    </header>
+
+    <div class="container">
+        <h2>Lista de Alumnos</h2>
+        <table id="alumnosTable">
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Curso</th>
+                <th>Acciones</th>
+            </tr>
+            <tr>
+                <td>Jefferson Gutierritos</td>
+                <td>18</td>
+                <td>Pokehabilidades</td>
+                <td>
+                    <button class="editar-button" onclick="editarAlumno(this)">Editar</button>
+                    <button class="eliminar-button" onclick="eliminarAlumno(this)">Eliminar</button>
+                </td>
+            </tr>
+            <!-- Puedes agregar más filas de datos aquí -->
+        </table>
+
+        <div class="button-container">
+            <button class="button" onclick="abrirModalAgregar()">Agregar Alumno</button>
+        </div>
+    </div>
+
+    <div id="modalEditar" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModalEditar()">&times;</span>
+            <h2>Editar Alumno</h2>
+            <form id="formularioEditar">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required><br><br>
+                <label for="curso">Curso:</label>
+                <input type="text" id="curso" name="curso" required><br><br>
+                <button type="submit" class="button">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modalAgregar" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModalAgregar()">&times;</span>
+            <h2>Agregar Alumno</h2>
+            <form id="formularioAgregar">
+                <label for="nombreAgregar">Nombre:</label>
+                <input type="text" id="nombreAgregar" name="nombreAgregar" required><br><br>
+                <label for="edadAgregar">Edad:</label>
+                <input type="number" id="edadAgregar" name="edadAgregar" required><br><br>
+                <label for="cursoAgregar">Curso:</label>
+                <input type="text" id="cursoAgregar" name="cursoAgregar" required><br><br>
+                <button type="submit" class="button">Agregar Alumno</button>
+            </form>
+        </div>
+    </div>
+
+<script src="/JS/script.js"></script>
+<script src="../JS/loader.js"></script>
+</body>
+</html>
